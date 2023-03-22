@@ -1,0 +1,68 @@
+
+<div class="container" id="feedback-form">
+    <h2>Payment Pot</h2>
+
+    <p>
+      <a routerLink="/shopping-cart">Go to cart</a>
+    </p>
+    
+    <!-- <div class="cart-item" *ngFor="let item of items">
+      <span>{{ item.name }} </span>
+      <span>{{ item.price | currency }}</span>
+    </div>
+     -->
+    <form>
+    
+      <div>
+        <label for="price">
+          What is your maximum shopping goal for today? (in Rs.)
+        </label>
+          <input id="price" type="number" formControlName="price" value="Rs.">
+      </div>
+    
+      <!-- <div>
+        <label for="address">
+          Address
+        </label>
+        <input id="address" type="text" formControlName="address">
+      </div> -->
+    
+      <button class="button" type="submit" onclick="return confirm('Limit Updated')">Submit</button>
+      <!-- <script>
+        function abc(){
+        var input = document.getElementById("price").value;
+        console.log(input);
+        }
+        // document.getElementById("price").innerHTML="Sonal!";
+      </script> -->
+      <!-- <p id="price"></p> -->
+    </form>
+
+    <!-- <script type="text/javascript">
+        function confirmation() {
+            alert('Limit Updated');
+        }
+    </script> -->
+    
+    
+
+<!-- <div id="feedback-form">
+  <h2 class="header">Register Today</h2>
+  <div>
+    <form>
+      <input type="text" name="email" placeholder="Email"></input>
+      <input type="text" name="name" placeholder="Name"></input>
+      <label for="feedback-notify">Remind me about this event via SMS</label>
+      <input type="checkbox" id="feedback-notify" name="notify">
+      <input type="text" id="feedback-phone" name="phone" placeholder="Phone number"></input>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</div> -->
+<!-- <script>
+  function test(){
+    console.log(thiss)
+    var abc = document.getElementById('price').value; 
+    alert(abc);
+  }
+</script> -->
